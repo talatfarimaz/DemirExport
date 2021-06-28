@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/kalori"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customerborder"
+        android:enabled="true"
+        android:hint="@string/kalori"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/kamyon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customerborder"
+        android:enabled="true"
+        android:hint="@string/kamyon"
+        android:inputType="numberDecimal|numberSigned"
+
+        />
+
+    <Button
+        android:id="@+id/ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/ekle" />
+
+    <Button
+        android:id="@+id/hesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/hesapla" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/customerborder">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/ortalama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customerborder"
+        android:enabled="true"
+        android:hint="@string/ortalama_kalori"
+        android:inputType="numberDecimal|numberSigned"
+
+
+        />
+</LinearLayout>

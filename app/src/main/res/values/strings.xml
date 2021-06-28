@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">DemirExport</string>
+    <string name="app_name">Kalori Hesaplama</string>
+    <string name="kalori">Kalori değeri giriniz!</string>
+    <string name="kamyon">Kamyon sayısı giriniz!</string>
+    <string name="ekle">Ekle</string>
+    <string name="hesapla">Hesapla</string>
+    <string name="ortalama_kalori">Ortalama kalori değeri burada görünecektir.</string>
+    <string name="delete">Sil</string>
 </resources>
