@@ -1,43 +1,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
     android:orientation="vertical">
-
+    <TextView
+        android:id="@+id/powered"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:enabled="true"
+        android:hint="@string/poweredBy"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        />
     <EditText
-        android:id="@+id/kalori"
+        android:id="@+id/calorie"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/customerborder"
         android:enabled="true"
-        android:hint="@string/kalori"
-        android:inputType="numberDecimal|numberSigned" />
-
-    <EditText
-        android:id="@+id/kamyon"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/customerborder"
-        android:enabled="true"
-        android:hint="@string/kamyon"
+        android:hint="@string/calorie"
         android:inputType="numberDecimal|numberSigned"
 
+    />
+
+    <EditText
+        android:id="@+id/truck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customerborder"
+        android:enabled="true"
+        android:hint="@string/truck"
+        android:inputType="numberDecimal|numberSigned"
         />
 
+    <EditText
+        android:id="@+id/tonnage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/customerborder"
+        android:enabled="true"
+        android:hint="@string/tonnage"
+        android:inputType="numberDecimal|numberSigned"
+        />
+    <LinearLayout
+        android:id="@+id/buttonTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
     <Button
-        android:id="@+id/ekle"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="@string/ekle" />
+        android:text="@string/add"
+        android:layout_marginEnd="20dp"/>
 
     <Button
-        android:id="@+id/hesapla"
+        android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="@string/hesapla" />
+        android:text="@string/calculate"
+        android:layout_marginStart="20dp"/>
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -47,7 +79,7 @@
         android:background="@drawable/customerborder">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/dataListLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -57,15 +89,14 @@
     </ScrollView>
 
     <EditText
-        android:id="@+id/ortalama"
+        android:id="@+id/average"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/customerborder"
         android:enabled="true"
-        android:hint="@string/ortalama_kalori"
+        android:hint="@string/average"
         android:inputType="numberDecimal|numberSigned"
-
-
+        android:textStyle="bold"
         />
 </LinearLayout>

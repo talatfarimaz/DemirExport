@@ -1,45 +1,34 @@
 package com.lasiyyema.demirexport;
 
-import android.widget.Button;
-import android.widget.TextView;
-
 public class DataObject {
-    private double kamyon;
-    private double kalori;
+    private double truckAmount;
+    private double calorie;
+    private double tonnage;
     private int id;
-    private Button delete;
-    private TextView information;
 
-    public Button getDelete() {
-        return delete;
+
+    public double getTonnage() {
+        return tonnage;
     }
 
-    public void setDelete(Button delete) {
-        this.delete = delete;
+    public void setTonnage(double tonaj) {
+        this.tonnage = tonaj;
     }
 
-    public TextView getInformation() {
-        return information;
+    public double getTruck() {
+        return truckAmount;
     }
 
-    public void setInformation(TextView information) {
-        this.information = information;
+    public void setTruck(double kamyon) {
+        this.truckAmount = kamyon;
     }
 
-    public double getKamyon() {
-        return kamyon;
+    public double getCalorie() {
+        return calorie;
     }
 
-    public void setKamyon(double kamyon) {
-        this.kamyon = kamyon;
-    }
-
-    public double getKalori() {
-        return kalori;
-    }
-
-    public void setKalori(double kalori) {
-        this.kalori = kalori;
+    public void setCalorie(double kalori) {
+        this.calorie = kalori;
     }
 
     public int getId() {
